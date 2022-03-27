@@ -1,0 +1,302 @@
+/* Narly OT Bold
+
+font-family: narly, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Narly OT Regular
+
+font-family: narly, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Narly OT Inline
+
+font-family: narly-inline, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Narly OT Outline
+
+font-family: narly-outline, sans-serif;
+
+font-weight: 400;
+
+font-style: normal; */
+
+/* Platelet OT Heavy
+
+font-family: platelet, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Platelet OT Regular
+
+font-family: platelet, sans-serif;
+
+font-weight: 400;
+
+font-style: normal; */
+
+.App {
+  font-family: platelet,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+
+  text-align: center;
+  cursor: url(./assets/cursor_arrow.png) 20 20, auto;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+
+  background-color: rgb(233, 233, 233);
+}
+
+h1{
+
+  font-size: 5rem;
+
+  font-family: narly-outline, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;   
+
+  letter-spacing: 0.3rem;
+}
+
+.intro-title-div{
+  position: absolute;
+  width: 100%;
+  /* display: block;
+  position: absolute;
+  /* text-align: center; */
+  /* left: 30%;  */
+  z-index: -10;
+  
+}
+
+.intro-title{
+  /* position: absolute; */
+  margin: 2% auto;
+ 
+  /* text-align: center; */ 
+}
+
+#h1-1{
+  font-size: 5rem;
+
+  font-family: narly-inline, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;   
+
+  color: rgb(67, 175, 5);
+
+}
+
+#h1-2{
+  font-size: 5.1rem;
+
+  font-family: narly, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;   
+
+  color: rgb(207, 124, 15);
+  text-shadow: 3px 3px #b66203;
+
+}
+
+#h1-3{
+  font-size: 5rem;
+
+  font-family: narly, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;   
+
+  color: rgb(255, 240, 35);
+
+ 
+  
+}
+
+
+#h1-4{
+  font-size: 5.3rem;
+
+  font-family: narly, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;   
+
+  color: rgb(167, 167, 167);
+
+  
+  
+}
+
+.clickable{
+  cursor: url(./assets/cursor_pointer.png) 20 20, pointer;
+}
+
+button{
+  width: 100px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  display: block;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.intropage{
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+#intropage-left{
+  border: #61dafb 1px solid;
+  height: 100vh;
+  width: 60vw;
+}
+
+#intropage-right{
+
+  border: #61dafb 1px solid;
+  height: 100vh;
+  width: 50vw;
+}
+
+.intropage-mice{
+  height: 20%;
+  display: grid;
+  grid-template-columns: [first] 20% [line2] auto [line3] 40% [end];
+  grid-template-rows:[begin] 10% [row1-start] 80% [row1-end];
+
+}
+
+.intropage-mouse{
+  
+  align-self: end;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+}
+
+#intropage-mouse-1{
+  /* height: 10%; */
+  /* position: absolute;
+  left: 15%;
+  bottom: 20%; */
+  
+  grid-column-start: line2;
+  grid-column-end: line3;
+
+}
+
+#intropage-mouse-2{
+  /* height: 10%; */
+  /* position: absolute;
+  left: 30%;
+  bottom: 20%; */
+  
+  grid-column-start: line3;
+  grid-column-end: end;
+
+}
+
+/* .btn-deactive{
+  font-size: 2rem;
+} */
+
+.btn-active{
+  width: 50px;
+  font-size: 3rem;
+}
+
+#gamepage{
+  padding-top: 10%;
+  display: grid;
+  grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
+  grid-template-rows: [row1-start] 15% [row1-end] 15% [third-line] auto [last-line];
+}
+
+#gamepage-left{
+  grid-column-start: first;
+  grid-column-end: line2;
+  justify-self: end;
+
+}
+
+#gamepage-right{
+  grid-column-start: line3;
+  grid-column-end: end;
+  justify-self: start;
+
+}
+
+
+#gamepage-middle{
+  grid-column-start: line2;
+  grid-column-end: line3;
+  justify-self: center;
+
+}
+
+#chatboard{
+  padding-top: 20%;
+  display: grid;
+  grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
+   
+}
+
+#chatboard-rule{
+  width: 70%;
+  height: 200px;
+  border: #61dafb 1px solid;
+
+  text-align: left;
+
+  grid-column-start: line2;
+  grid-column-end: line3;
+  justify-self: center;
+  
+}
+
+#chatboard-left{
+  grid-column-start: first;
+  grid-column-end: line2;
+  justify-self: end;
+  align-self: center;
+
+}
+
+#chatboard-right{
+  grid-column-start: line3;
+  grid-column-end: end;
+  justify-self: start;
+  align-self: center;
+  
+}
