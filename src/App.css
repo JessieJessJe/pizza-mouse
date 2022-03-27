@@ -178,14 +178,14 @@ button{
 }
 
 #intropage-left{
-  border: #61dafb 1px solid;
+ 
   height: 100vh;
   width: 60vw;
 }
 
 #intropage-right{
 
-  border: #61dafb 1px solid;
+
   height: 100vh;
   width: 50vw;
 }
@@ -275,7 +275,6 @@ button{
 #chatboard-rule{
   width: 70%;
   height: 200px;
-  border: #61dafb 1px solid;
 
   text-align: left;
 
