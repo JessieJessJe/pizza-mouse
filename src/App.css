@@ -159,11 +159,33 @@ h1{
 }
 
 button{
-  width: 100px;
+  font-family: platelet,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  border: none;
+
+  background: url('./assets/button.png');
+  background-size: 80px;
+  width: 80px;
   padding: 15px;
   margin: 15px;
+  margin-top: 0px;
+  color:black;
   text-align: center;
   display: block;
+}
+
+button:hover{
+  background: url('./assets/button_hover.png');
+  background-size: 80px;
+  color: white;
+}
+
+button:disabled{
+  background: url('./assets/button_disabled.png');
+  background-size: 80px;
+  color: grey;
 }
 
 .App-logo {
@@ -180,14 +202,117 @@ button{
 #intropage-left{
  
   height: 100vh;
-  width: 60vw;
+  width: 71vw;
 }
 
 #intropage-right{
 
-
   height: 100vh;
   width: 50vw;
+}
+
+#intropage-right-btn{
+  /* position: absolute; 
+  top: 20%;
+  left: 20%; */
+
+  font-family: narly, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 32% auto;
+
+}
+
+.intropage-enter{
+  position: fixed;
+  margin-left: 10%;
+  font-size: 3rem;
+  font-kerning: 0.5rem;
+}
+
+
+#enter-1{
+
+
+  font-family: narly-inline, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;   
+
+  color: rgb(67, 175, 5);
+
+}
+
+#enter-2{
+
+
+  font-family: narly, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;   
+
+  color: rgb(207, 124, 15);
+  text-shadow: 3px 3px #b66203;
+
+}
+
+#enter-3{
+ 
+
+  font-family: narly, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;   
+
+  color: rgb(255, 240, 35);
+
+ 
+  
+}
+
+
+#enter-4{
+ 
+
+  font-family: narly, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;   
+
+  color: rgb(167, 167, 167);
+
+  
+  
+}
+
+#enter-5{
+
+
+
+  font-family: narly, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;   
+
+  /* color: rgb(207, 124, 15); */
+  text-shadow: 3px 3px #b66203;
+
+  color: rgb(74, 192, 5);
+
+
+}
+
+#enter-5:hover{
+  color: white;
+}
+
+#enter-3:hover{
+  color: white;
 }
 
 .intropage-mice{
@@ -266,9 +391,9 @@ button{
 }
 
 #chatboard{
-  padding-top: 20%;
+  padding-top: 15%;
   display: grid;
-  grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
+  grid-template-columns: [first] 25% [line2] auto [line3] 15% [end];
    
 }
 
@@ -282,6 +407,13 @@ button{
   grid-column-end: line3;
   justify-self: center;
   
+}
+#chatboard-bubble{
+  position: absolute;
+  width: 35%;
+  left: 15%;
+  top: 25%;
+
 }
 
 #chatboard-left{

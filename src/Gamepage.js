@@ -47,8 +47,8 @@ function Gamepage({togglePage}) {
           id="ifr1"
           src="https://jessiejessje.github.io/partyMouse/" 
           // src="http://127.0.0.1:5500/colliGame/" 
-          frameborder="0"
-          width="600"
+         frameBorder={0}
+          width="800"
           height="600"
 
           ></iframe>

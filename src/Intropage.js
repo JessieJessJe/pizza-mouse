@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Chatboard from './Chatboard';
+import Entergame from './Entergame';
 
 
 import hat0 from './assets/mouse_hat_A0.png';
@@ -63,9 +64,11 @@ function Intropage({togglePage, rule, ruleIdx, changeRuleIdx, resetRuleIdx }) {
         </div>
       </div>
 
-      <div className="intropage-div" id="intropage-right">
-         <button className="clickable" onClick={togglePage}>Enter Game</button>
-      </div>
+      <Entergame togglePage={togglePage}/>
+
+      {/* <div className="intropage-div" id="intropage-right">
+         <button className="clickable" id="intropage-right-btn" onClick={togglePage}>Enter</button>
+      </div> */}
     </div>
   );
 }

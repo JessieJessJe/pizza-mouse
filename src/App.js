@@ -4,44 +4,16 @@ import Intropage from './Intropage';
 import Gamepage from './Gamepage';
 import './App.css';
 
-///////////////
-
-// const CSSTransition =  window.CSSTransition;
 
 const duration = 300;
 
-// const defaultStyle = {
-//   transition: `opacity ${duration}ms ease-in-out`,
-//   opacity: 0,
-// }
-
-// const transitionStyles = {
-//   entering: { opacity: 1 },
-//   entered:  { opacity: 1 },
-//   exiting:  { opacity: 0 },
-//   exited:  { opacity: 0 },
-// };
-
-// const Fade = ({ in: intropage }) => (
-//   <Transition in={intropage} timeout={duration}>
-//     {state => (
-//       <div style={{
-//         ...defaultStyle,
-//         ...transitionStyles[state]
-//       }}>
-//         I'm a fade Transition!
-//       </div>
-//     )}
-//   </Transition>
-// );
-///////////////
-
 function App() {
-  const rule = ["1.You've created a great new game, all polished up and ready to present.",
-  "2.Teaching a completely new game to the public is not always easy. It is important to remember that your audience has no idea how any aspect of your game works yet.",
-  "3.That's where your set of game rules comes in.",
-  "4.Writing game rules can take a bit of time. But it's important to include detailed instructions of the objective, all the pieces, and how the game is played.",
-  "go!" ]
+  const rule = ["Hello little mouse, welcome to the pizza collection squad! You and your friends have been assigned to collect pizzas and bring them to the delivery point.",
+
+  "But take care not to hit your friends! If you hit another mouse you both will get stuck together",
+  `You can move around the bottles with arrow keys "↑", "↓", "←", "→", and other objects to signal your position to the other mice.`,
+  "Collect as many pizzas as you can in 90 seconds",
+  "Ready? Click ENTER and go!" ]
 
   const [intropage, setIntroPage] = useState(true);
   const [ruleIdx, setRuleIdx] = useState(0);
