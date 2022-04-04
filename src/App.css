@@ -54,7 +54,8 @@ font-style: normal; */
   font-family: platelet,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
 
   text-align: center;
   cursor: url(./assets/cursor_arrow.png) 20 20, auto;
@@ -62,7 +63,7 @@ font-style: normal; */
   width: 100vw;
   position: fixed;
 
-  background-color: rgb(233, 233, 233);
+  /* background-color: rgb(233, 233, 233); */
 }
 
 h1{
@@ -81,10 +82,7 @@ h1{
 .intro-title-div{
   position: absolute;
   width: 100%;
-  /* display: block;
-  position: absolute;
-  /* text-align: center; */
-  /* left: 30%;  */
+  top: 5%;
   z-index: -10;
   
 }
@@ -196,38 +194,36 @@ button:disabled{
 .intropage{
   padding-top: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #intropage-left{
- 
-  height: 100vh;
-  width: 71vw;
+  
+  height: 25vh;
+  width: 100vw;
 }
 
 #intropage-right{
-
-  height: 100vh;
-  width: 50vw;
+  height: 10vh;
 }
 
 #intropage-right-btn{
-  /* position: absolute; 
-  top: 20%;
-  left: 20%; */
 
   font-family: narly, sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 32% auto;
-
 }
 
 .intropage-enter{
-  position: fixed;
+  position: absolute;
+  top: 20vh;
+  width: 100%;
+  margin: 0% auto;
+  font-size: 2.5rem;
+  /* position: fixed;
   margin-left: 10%;
   font-size: 3rem;
-  font-kerning: 0.5rem;
+  font-kerning: 0.5rem; */
 }
 
 
@@ -316,18 +312,19 @@ button:disabled{
 }
 
 .intropage-mice{
-  height: 20%;
+  height: 15vh;
+
   display: grid;
-  grid-template-columns: [first] 20% [line2] auto [line3] 40% [end];
-  grid-template-rows:[begin] 10% [row1-start] 80% [row1-end];
+  grid-template-columns: [first] 35% [line2] auto [line3] 35% [end];
+  grid-template-rows:[begin] 30% [row1-start] 70% [row1-end];
 
 }
 
 .intropage-mouse{
-  
   align-self: end;
   grid-row-start: row1-start;
   grid-row-end: row1-end;
+
 }
 
 #intropage-mouse-1{
@@ -339,6 +336,8 @@ button:disabled{
   grid-column-start: line2;
   grid-column-end: line3;
 
+  justify-self: start;
+
 }
 
 #intropage-mouse-2{
@@ -347,8 +346,9 @@ button:disabled{
   left: 30%;
   bottom: 20%; */
   
-  grid-column-start: line3;
-  grid-column-end: end;
+  grid-column-start: line2;
+  grid-column-end: line3;
+  justify-self: end;
 
 }
 
@@ -365,19 +365,30 @@ button:disabled{
   padding-top: 10%;
   display: grid;
   grid-template-columns: [first] 15% [line2] auto [line3] 15% [end];
-  grid-template-rows: [row1-start] 15% [row1-end] 15% [third-line] auto [last-line];
+  grid-template-rows: [row1-start] 10% [row1-end] 5% [third-line] 85% [last-line];
 }
 
 #gamepage-left{
-  grid-column-start: first;
+  /* grid-column-start: first;
   grid-column-end: line2;
-  justify-self: end;
+  justify-self: end; */
+  grid-column-start: line2;
+  grid-column-end: line3;
+
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+
+  align-items: top;
+  justify-self: center;
 
 }
+
+
 
 #gamepage-right{
   grid-column-start: line3;
   grid-column-end: end;
+
   justify-self: start;
 
 }
@@ -386,14 +397,15 @@ button:disabled{
 #gamepage-middle{
   grid-column-start: line2;
   grid-column-end: line3;
+
   justify-self: center;
 
 }
 
 #chatboard{
-  padding-top: 15%;
   display: grid;
-  grid-template-columns: [first] 25% [line2] auto [line3] 15% [end];
+  grid-template-rows:[first] 5% [line2] 15% [linerule] auto [line3] 5% [end];
+  grid-template-columns: [first] 30% [line2] auto [line3] 30% [end];
    
 }
 
@@ -403,20 +415,32 @@ button:disabled{
 
   text-align: left;
 
+  grid-row-start: linerule;
+  grid-row-end: line3;
+
   grid-column-start: line2;
   grid-column-end: line3;
   justify-self: center;
+
+  color: white;
   
 }
 #chatboard-bubble{
-  position: absolute;
-  width: 35%;
-  left: 15%;
-  top: 25%;
+  grid-row-start: line2;
+  grid-row-end: line3;
+
+  grid-column-start: line2;
+  grid-column-end: line3;
+  justify-self: center;
 
 }
 
 #chatboard-left{
+
+
+  grid-row-start: line2;
+  grid-row-end: line3;
+
   grid-column-start: first;
   grid-column-end: line2;
   justify-self: end;
@@ -424,10 +448,103 @@ button:disabled{
 
 }
 
+#chatboard-left > button{
+  background: url('./assets/button_l.png');
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+
+}
+
+#chatboard-left > button:hover{
+  background: url('./assets/button_hover_l.png');
+  background-repeat: no-repeat;
+}
+
+#chatboard-left > button:disabled{
+  background: url('./assets/button_disabled_l.png');
+  background-repeat: no-repeat;
+}
+
 #chatboard-right{
+
+
+  grid-row-start: line2;
+  grid-row-end: line3;
+
   grid-column-start: line3;
   grid-column-end: end;
   justify-self: start;
   align-self: center;
   
+}
+
+#chatboard-right > button{
+  background: url('./assets/button_r.png');
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+
+}
+
+#chatboard-right > button:hover{
+  background: url('./assets/button_hover_r.png');
+  background-repeat: no-repeat;
+}
+
+#chatboard-right > button:disabled{
+  background: url('./assets/button_disabled_r.png');
+  background-repeat: no-repeat;
+}
+
+#chatboard-bubble{
+  
+  max-width: 90%
+
+}
+
+
+#app-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height:100vh;
+  z-index: -20;
+  display: grid;
+  grid-template-columns: [c1] 21% [c2] auto [c3] 21% [c4];
+
+}
+
+#app-bg-left{
+  grid-column: c1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  width: 100%;
+  background-color: black;
+
+  background-image: url("./assets/pizza_bg.png");
+  background-repeat: space;
+
+
+}
+
+#app-bg-right{
+  grid-column: c3;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  width: 100%;
+  background-color: black;
+
+  background-image: url("./assets/pizza_bg.png");
+  background-repeat: space;
+
+}
+
+#gamepage-left > button{
+  display: inline;
 }

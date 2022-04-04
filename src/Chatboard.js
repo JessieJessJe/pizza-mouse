@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import bubble from './assets/bubble.png';
+import bubble from './assets/SignBoard.png';
 
 
 function Chatboard({rule, ruleIdx, changeRuleIdx, resetRuleIdx}) {
@@ -51,7 +51,7 @@ function Chatboard({rule, ruleIdx, changeRuleIdx, resetRuleIdx}) {
          <img id="chatboard-bubble" src={bubble} alt=""/>
       
         <div id="chatboard-left">
-        <button className="clickable" disabled={getBtnClass(0)} onClick = {()=>{ if(ruleIdx>0){ changeRuleIdx(-1)}}}>Prev</button>
+        <button className="clickable" disabled={getBtnClass(0)} onClick = {()=>{ if(ruleIdx>0){ changeRuleIdx(-1)}}}></button>
         
         </div>
         <div id="chatboard-rule"> 
@@ -59,7 +59,7 @@ function Chatboard({rule, ruleIdx, changeRuleIdx, resetRuleIdx}) {
         </div>
 
         <div id="chatboard-right"> 
-        <button className="clickable" disabled={getBtnClass(rule.length - 1)} onClick = {()=>{ if(ruleIdx<rule.length-1){ changeRuleIdx(1)}}}>Next</button>
+        <button className="clickable" disabled={getBtnClass(rule.length - 1)} onClick = {()=>{ if(ruleIdx<rule.length-1){ changeRuleIdx(1)}}}></button>
         </div>
       </div>
     );

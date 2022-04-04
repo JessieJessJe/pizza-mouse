@@ -10,7 +10,7 @@ const duration = 300;
 function App() {
   const rule = ["Hello little mouse, welcome to the pizza collection squad! You and your friends have been assigned to collect pizzas and bring them to the delivery point.",
 
-  "But take care not to hit your friends! If you hit another mouse you both will get stuck together",
+  "But take care not to hit your friends! If you hit another mouse you both will get stuck together.",
   `You can move around the bottles with arrow keys "↑", "↓", "←", "→", and other objects to signal your position to the other mice.`,
   "Collect as many pizzas as you can in 90 seconds",
   "Ready? Click ENTER and go!" ]
@@ -28,23 +28,24 @@ function App() {
   }
 
   return (
+    <React.Fragment>
     <div className="App">
 
       <div className="intro-title-div">
-      <h1 className="intro-title" id="h1-4">PIZZA MOUSE</h1>
+      <h1 className="intro-title" id="h1-4">CHEESE STICK</h1>
       </div>
 
       <div className="intro-title-div">
-      <h1 className="intro-title" id="h1-1">PIZZA MOUSE</h1>
+      <h1 className="intro-title" id="h1-1">CHEESE STICK</h1>
       </div>
 
       <div className="intro-title-div">
-      <h1 className="intro-title" id="h1-2">PIZZA MOUSE</h1>
+      <h1 className="intro-title" id="h1-2">CHEESE STICK</h1>
       </div>
 
 
       <div className="intro-title-div">
-      <h1 className="intro-title" id="h1-3">PIZZA MOUSE</h1>
+      <h1 className="intro-title" id="h1-3">CHEESE STICK</h1>
       </div>
 
 
@@ -65,6 +66,15 @@ function App() {
      
     
     </div>
+
+    <div id="app-background">
+
+    <div id="app-bg-left"></div>
+    <div id="app-bg-right"></div>
+    <div id="app-bg-mid"></div>
+    </div>
+
+    </React.Fragment>
   );
 }
 

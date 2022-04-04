@@ -45,8 +45,11 @@ function Intropage({togglePage, rule, ruleIdx, changeRuleIdx, resetRuleIdx }) {
   
 
   return (
+
+    <React.Fragment>
     <div className="intropage">
-    
+      <Entergame togglePage={togglePage}/>
+      
       <div className="intropage-div" id="intropage-left">
         <Chatboard 
         
@@ -64,12 +67,10 @@ function Intropage({togglePage, rule, ruleIdx, changeRuleIdx, resetRuleIdx }) {
         </div>
       </div>
 
-      <Entergame togglePage={togglePage}/>
-
-      {/* <div className="intropage-div" id="intropage-right">
-         <button className="clickable" id="intropage-right-btn" onClick={togglePage}>Enter</button>
-      </div> */}
+  
     </div>
+
+    </React.Fragment>
   );
 }
 

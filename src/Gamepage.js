@@ -38,8 +38,14 @@ function Gamepage({togglePage}) {
        
         <div id="gamepage-left"> 
         <button className="clickable" onClick={togglePage}>Back</button>
-        <button className="clickable" >Help</button>
+        {/* <button className="clickable" >Help</button> */}
+        {/* <button className="clickable">Sound</button> */}
+        <button className="clickable" onClick={() => {
+          window.open("https://twisty-alder-868.notion.site/Cheese-Stick-Press-Kit-6d42c26d518a41c69c6d0c426e0728e3");
+        }}>About</button>
+
         </div>
+
         <div id="gamepage-middle"> 
         <iframe 
          
@@ -56,8 +62,7 @@ function Gamepage({togglePage}) {
         </div>
        
         <div id="gamepage-right"> 
-        <button className="clickable">Sound</button>
-        <button className="clickable">About</button>
+
         
         </div>
        
